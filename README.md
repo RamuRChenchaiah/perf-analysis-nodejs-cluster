@@ -1,12 +1,48 @@
 # perf-analysis-nodejs-cluster
-To analyse the performance differences on using a clustered approach in node js
+To analyze the performance differences on using a clustered approach in node js
 
 
 # How to use?
 
 ## Pre-requisites:
 
+- siege (a perf tool)
+
+
 ## Executions:
+### Phase 1:
+- node perf-without-cluster-no-computations.js
+- siege  -t20s http://localhost:3000
+- Results are recorded as:
+![alt text](https://github.com/RamuRChenchaiah/perf-analysis-nodejs-cluster/blob/master/1-perf-without-cluster-no-computations-executions.PNG "perf-without-cluster-no-computations")
+
+
+- node perf-with-cluster-no-computations.js
+- siege  -t20s http://localhost:3000
+- Results are recorded as:
+![alt text](https://github.com/RamuRChenchaiah/perf-analysis-nodejs-cluster/blob/master/1-perf-with-cluster-no-computations-executions.PNG "perf-with-cluster-no-computations")
+
+
+![alt text](https://github.com/RamuRChenchaiah/perf-analysis-nodejs-cluster/blob/master/2-perf-with-cluster-no-computations.PNG "perf-with-cluster-no-computations")
+
+### Phase 2:
+- node perf-without-cluster-computations.js
+- siege  -t20s http://localhost:3000
+- Results are recorded as:
+
+![alt text](https://github.com/RamuRChenchaiah/perf-analysis-nodejs-cluster/blob/master/3-perf-without-cluster-computations.PNG "perf-without-cluster-computations")
+
+
+
+- node perf-with-cluster-computations.js
+- siege  -t20s http://localhost:3000
+- Results are recorded as:
+
+![alt text](https://github.com/RamuRChenchaiah/perf-analysis-nodejs-cluster/blob/master/3-perf-with-cluster-computations.PNG "perf-with-cluster-computations")
+
+## Conclusion(s):
+- as seen, it is clear that clustered computation is better at almost all perf params
+
 
 ---
 
