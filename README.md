@@ -12,7 +12,7 @@ To analyze the performance differences on using a clustered approach in node js
 ## Executions:
 
 ### Environment settings:
-![alt text](  "Env settings")
+![alt text](https://github.com/RamuRChenchaiah/perf-analysis-nodejs-cluster/blob/master/Environment%20setting.PNG  "Env settings")
 
 ### Phase 1:
 - node perf-without-cluster-no-computations.js
