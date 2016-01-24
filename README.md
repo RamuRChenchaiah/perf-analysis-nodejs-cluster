@@ -10,6 +10,10 @@ To analyze the performance differences on using a clustered approach in node js
 
 
 ## Executions:
+
+### Environment settings:
+![alt text](  "Env settings")
+
 ### Phase 1:
 - node perf-without-cluster-no-computations.js
 - siege  -t20s http://localhost:3000
