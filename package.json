@@ -1,0 +1,8 @@
+{
+  "name": "perf-analysis",
+  "description": "Performance analysis on clustered node vs simple-single core",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
